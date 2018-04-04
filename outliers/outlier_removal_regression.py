@@ -25,14 +25,12 @@ ages_train, ages_test, net_worths_train, net_worths_test = train_test_split(ages
 
 ### fill in a regression here!  Name the regression object reg so that
 ### the plotting code below works, and you can see what your regression looks like
+from sklearn import linear_model
+reg = linear_model.LinearRegression()
+reg.fit(ages_train,net_worths_train)
 
-
-
-
-
-
-
-
+print reg.coef_
+print reg.intercept_
 
 
 
@@ -52,10 +50,6 @@ try:
 except NameError:
     print "your regression object doesn't exist, or isn't name reg"
     print "can't make predictions to use in identifying outliers"
-
-
-
-
 
 
 

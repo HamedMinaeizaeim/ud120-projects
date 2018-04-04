@@ -19,4 +19,15 @@ import pickle
 
 enron_data = pickle.load(open("../final_project/final_project_dataset.pkl", "r"))
 
+Keysperson=enron_data.keys()
+count=0;
+for i in range(len(Keysperson)):
+	print i
+	if (enron_data[Keysperson[i]]['poi']==True):
+        	count=count+1er	
+
+print count
+		
+ 
+
 

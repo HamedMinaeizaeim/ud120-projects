@@ -18,7 +18,7 @@ bumpy_slow = [features_train[ii][1] for ii in range(0, len(features_train)) if l
 clf = RandomForestClassifier(n_estimators=80)
 clf.fit(features_train,labels_train)
 print clf.score(features_test,labels_test)
-
+print clf
 #### initial visualization
 #plt.xlim(0.0, 1.0)
 #plt.ylim(0.0, 1.0)
